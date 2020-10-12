@@ -9,7 +9,10 @@
         <!--把映射级别改成全映射-->
         <setting name="autoMappingBehavior" value="FULL"/>
     </settings>
-
+    <!--<typeAliases>
+        &lt;!&ndash;<typeAlias type="cn.kgc.testmybatis01.pojo.User" alias="User"/>&ndash;&gt;
+        <package name="cn.kgc.pojo"/>
+    </typeAliases>-->
     <plugins>
         <plugin interceptor="com.github.pagehelper.PageHelper">
             <!--  该参数默认为false -->

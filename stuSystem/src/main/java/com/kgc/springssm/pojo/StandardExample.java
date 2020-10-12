@@ -1,4 +1,4 @@
-package com.kgc.pojo;
+package com.kgc.springssm.pojo;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -332,143 +332,143 @@ public class StandardExample {
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionIsNull() {
-            addCriterion("standardversion is null");
+        public Criteria andVersionnIsNull() {
+            addCriterion("versionn is null");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionIsNotNull() {
-            addCriterion("standardversion is not null");
+        public Criteria andVersionnIsNotNull() {
+            addCriterion("versionn is not null");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionEqualTo(String value) {
-            addCriterion("standardversion =", value, "standardversion");
+        public Criteria andVersionnEqualTo(String value) {
+            addCriterion("versionn =", value, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionNotEqualTo(String value) {
-            addCriterion("standardversion <>", value, "standardversion");
+        public Criteria andVersionnNotEqualTo(String value) {
+            addCriterion("versionn <>", value, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionGreaterThan(String value) {
-            addCriterion("standardversion >", value, "standardversion");
+        public Criteria andVersionnGreaterThan(String value) {
+            addCriterion("versionn >", value, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionGreaterThanOrEqualTo(String value) {
-            addCriterion("standardversion >=", value, "standardversion");
+        public Criteria andVersionnGreaterThanOrEqualTo(String value) {
+            addCriterion("versionn >=", value, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionLessThan(String value) {
-            addCriterion("standardversion <", value, "standardversion");
+        public Criteria andVersionnLessThan(String value) {
+            addCriterion("versionn <", value, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionLessThanOrEqualTo(String value) {
-            addCriterion("standardversion <=", value, "standardversion");
+        public Criteria andVersionnLessThanOrEqualTo(String value) {
+            addCriterion("versionn <=", value, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionLike(String value) {
-            addCriterion("standardversion like", value, "standardversion");
+        public Criteria andVersionnLike(String value) {
+            addCriterion("versionn like", value, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionNotLike(String value) {
-            addCriterion("standardversion not like", value, "standardversion");
+        public Criteria andVersionnNotLike(String value) {
+            addCriterion("versionn not like", value, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionIn(List<String> values) {
-            addCriterion("standardversion in", values, "standardversion");
+        public Criteria andVersionnIn(List<String> values) {
+            addCriterion("versionn in", values, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionNotIn(List<String> values) {
-            addCriterion("standardversion not in", values, "standardversion");
+        public Criteria andVersionnNotIn(List<String> values) {
+            addCriterion("versionn not in", values, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionBetween(String value1, String value2) {
-            addCriterion("standardversion between", value1, value2, "standardversion");
+        public Criteria andVersionnBetween(String value1, String value2) {
+            addCriterion("versionn between", value1, value2, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardversionNotBetween(String value1, String value2) {
-            addCriterion("standardversion not between", value1, value2, "standardversion");
+        public Criteria andVersionnNotBetween(String value1, String value2) {
+            addCriterion("versionn not between", value1, value2, "versionn");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysIsNull() {
-            addCriterion("standardkeys is null");
+        public Criteria andKeyssIsNull() {
+            addCriterion("keyss is null");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysIsNotNull() {
-            addCriterion("standardkeys is not null");
+        public Criteria andKeyssIsNotNull() {
+            addCriterion("keyss is not null");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysEqualTo(String value) {
-            addCriterion("standardkeys =", value, "standardkeys");
+        public Criteria andKeyssEqualTo(String value) {
+            addCriterion("keyss =", value, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysNotEqualTo(String value) {
-            addCriterion("standardkeys <>", value, "standardkeys");
+        public Criteria andKeyssNotEqualTo(String value) {
+            addCriterion("keyss <>", value, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysGreaterThan(String value) {
-            addCriterion("standardkeys >", value, "standardkeys");
+        public Criteria andKeyssGreaterThan(String value) {
+            addCriterion("keyss >", value, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysGreaterThanOrEqualTo(String value) {
-            addCriterion("standardkeys >=", value, "standardkeys");
+        public Criteria andKeyssGreaterThanOrEqualTo(String value) {
+            addCriterion("keyss >=", value, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysLessThan(String value) {
-            addCriterion("standardkeys <", value, "standardkeys");
+        public Criteria andKeyssLessThan(String value) {
+            addCriterion("keyss <", value, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysLessThanOrEqualTo(String value) {
-            addCriterion("standardkeys <=", value, "standardkeys");
+        public Criteria andKeyssLessThanOrEqualTo(String value) {
+            addCriterion("keyss <=", value, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysLike(String value) {
-            addCriterion("standardkeys like", value, "standardkeys");
+        public Criteria andKeyssLike(String value) {
+            addCriterion("keyss like", value, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysNotLike(String value) {
-            addCriterion("standardkeys not like", value, "standardkeys");
+        public Criteria andKeyssNotLike(String value) {
+            addCriterion("keyss not like", value, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysIn(List<String> values) {
-            addCriterion("standardkeys in", values, "standardkeys");
+        public Criteria andKeyssIn(List<String> values) {
+            addCriterion("keyss in", values, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysNotIn(List<String> values) {
-            addCriterion("standardkeys not in", values, "standardkeys");
+        public Criteria andKeyssNotIn(List<String> values) {
+            addCriterion("keyss not in", values, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysBetween(String value1, String value2) {
-            addCriterion("standardkeys between", value1, value2, "standardkeys");
+        public Criteria andKeyssBetween(String value1, String value2) {
+            addCriterion("keyss between", value1, value2, "keyss");
             return (Criteria) this;
         }
 
-        public Criteria andStandardkeysNotBetween(String value1, String value2) {
-            addCriterion("standardkeys not between", value1, value2, "standardkeys");
+        public Criteria andKeyssNotBetween(String value1, String value2) {
+            addCriterion("keyss not between", value1, value2, "keyss");
             return (Criteria) this;
         }
 

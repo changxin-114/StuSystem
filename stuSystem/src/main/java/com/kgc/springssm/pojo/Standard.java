@@ -1,6 +1,4 @@
-package com.kgc.pojo;
-
-import java.util.Date;
+package com.kgc.springssm.pojo;
 
 public class Standard {
     private Integer id;
@@ -9,9 +7,9 @@ public class Standard {
 
     private String zhname;
 
-    private String standardversion;
+    private String versionn;
 
-    private String standardkeys;
+    private String keyss;
 
     private String releaseDate;
 
@@ -43,20 +41,20 @@ public class Standard {
         this.zhname = zhname == null ? null : zhname.trim();
     }
 
-    public String getStandardversion() {
-        return standardversion;
+    public String getVersionn() {
+        return versionn;
     }
 
-    public void setStandardversion(String standardversion) {
-        this.standardversion = standardversion == null ? null : standardversion.trim();
+    public void setVersionn(String versionn) {
+        this.versionn = versionn == null ? null : versionn.trim();
     }
 
-    public String getStandardkeys() {
-        return standardkeys;
+    public String getKeyss() {
+        return keyss;
     }
 
-    public void setStandardkeys(String standardkeys) {
-        this.standardkeys = standardkeys == null ? null : standardkeys.trim();
+    public void setKeyss(String keyss) {
+        this.keyss = keyss == null ? null : keyss.trim();
     }
 
     public String getReleaseDate() {

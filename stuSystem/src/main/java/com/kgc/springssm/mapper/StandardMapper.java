@@ -1,7 +1,7 @@
-package com.kgc.mapper;
+package com.kgc.springssm.mapper;
 
-import com.kgc.pojo.Standard;
-import com.kgc.pojo.StandardExample;
+import com.kgc.springssm.pojo.Standard;
+import com.kgc.springssm.pojo.StandardExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

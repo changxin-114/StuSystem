@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.kgc.mapper.StandardMapper" >
-  <resultMap id="BaseResultMap" type="com.kgc.pojo.Standard" >
+<mapper namespace="com.kgc.springssm.mapper.StandardMapper" >
+  <resultMap id="BaseResultMap" type="com.kgc.springssm.pojo.Standard" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="std_num" property="stdNum" jdbcType="VARCHAR" />
     <result column="zhname" property="zhname" jdbcType="VARCHAR" />
-    <result column="standardversion" property="standardversion" jdbcType="VARCHAR" />
-    <result column="standardkeys" property="standardkeys" jdbcType="VARCHAR" />
+    <result column="versionn" property="versionn" jdbcType="VARCHAR" />
+    <result column="keyss" property="keyss" jdbcType="VARCHAR" />
     <result column="release_date" property="releaseDate" jdbcType="DATE" />
     <result column="impl_date" property="implDate" jdbcType="DATE" />
     <result column="package_path" property="packagePath" jdbcType="VARCHAR" />
@@ -70,9 +70,9 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, std_num, zhname, standardversion, standardkeys, release_date, impl_date, package_path
+    id, std_num, zhname, versionn, keyss, release_date, impl_date, package_path
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.kgc.pojo.StandardExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.kgc.springssm.pojo.StandardExample" >
     select
     <if test="distinct" >
       distinct
@@ -96,21 +96,21 @@
     delete from standard
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.kgc.pojo.StandardExample" >
+  <delete id="deleteByExample" parameterType="com.kgc.springssm.pojo.StandardExample" >
     delete from standard
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.kgc.pojo.Standard" >
+  <insert id="insert" parameterType="com.kgc.springssm.pojo.Standard" >
     insert into standard (id, std_num, zhname, 
-      standardversion, standardkeys, release_date, 
+      versionn, keyss, release_date, 
       impl_date, package_path)
     values (#{id,jdbcType=INTEGER}, #{stdNum,jdbcType=VARCHAR}, #{zhname,jdbcType=VARCHAR}, 
-      #{standardversion,jdbcType=VARCHAR}, #{standardkeys,jdbcType=VARCHAR}, #{releaseDate,jdbcType=DATE}, 
+      #{versionn,jdbcType=VARCHAR}, #{keyss,jdbcType=VARCHAR}, #{releaseDate,jdbcType=DATE}, 
       #{implDate,jdbcType=DATE}, #{packagePath,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.kgc.pojo.Standard" >
+  <insert id="insertSelective" parameterType="com.kgc.springssm.pojo.Standard" >
     insert into standard
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -122,11 +122,11 @@
       <if test="zhname != null" >
         zhname,
       </if>
-      <if test="standardversion != null" >
-        standardversion,
+      <if test="versionn != null" >
+        versionn,
       </if>
-      <if test="standardkeys != null" >
-        standardkeys,
+      <if test="keyss != null" >
+        keyss,
       </if>
       <if test="releaseDate != null" >
         release_date,
@@ -148,11 +148,11 @@
       <if test="zhname != null" >
         #{zhname,jdbcType=VARCHAR},
       </if>
-      <if test="standardversion != null" >
-        #{standardversion,jdbcType=VARCHAR},
+      <if test="versionn != null" >
+        #{versionn,jdbcType=VARCHAR},
       </if>
-      <if test="standardkeys != null" >
-        #{standardkeys,jdbcType=VARCHAR},
+      <if test="keyss != null" >
+        #{keyss,jdbcType=VARCHAR},
       </if>
       <if test="releaseDate != null" >
         #{releaseDate,jdbcType=DATE},
@@ -165,7 +165,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.kgc.pojo.StandardExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.kgc.springssm.pojo.StandardExample" resultType="java.lang.Integer" >
     select count(*) from standard
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -183,11 +183,11 @@
       <if test="record.zhname != null" >
         zhname = #{record.zhname,jdbcType=VARCHAR},
       </if>
-      <if test="record.standardversion != null" >
-        standardversion = #{record.standardversion,jdbcType=VARCHAR},
+      <if test="record.versionn != null" >
+        versionn = #{record.versionn,jdbcType=VARCHAR},
       </if>
-      <if test="record.standardkeys != null" >
-        standardkeys = #{record.standardkeys,jdbcType=VARCHAR},
+      <if test="record.keyss != null" >
+        keyss = #{record.keyss,jdbcType=VARCHAR},
       </if>
       <if test="record.releaseDate != null" >
         release_date = #{record.releaseDate,jdbcType=DATE},
@@ -208,8 +208,8 @@
     set id = #{record.id,jdbcType=INTEGER},
       std_num = #{record.stdNum,jdbcType=VARCHAR},
       zhname = #{record.zhname,jdbcType=VARCHAR},
-      standardversion = #{record.standardversion,jdbcType=VARCHAR},
-      standardkeys = #{record.standardkeys,jdbcType=VARCHAR},
+      versionn = #{record.versionn,jdbcType=VARCHAR},
+      keyss = #{record.keyss,jdbcType=VARCHAR},
       release_date = #{record.releaseDate,jdbcType=DATE},
       impl_date = #{record.implDate,jdbcType=DATE},
       package_path = #{record.packagePath,jdbcType=VARCHAR}
@@ -217,7 +217,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.kgc.pojo.Standard" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.kgc.springssm.pojo.Standard" >
     update standard
     <set >
       <if test="stdNum != null" >
@@ -226,11 +226,11 @@
       <if test="zhname != null" >
         zhname = #{zhname,jdbcType=VARCHAR},
       </if>
-      <if test="standardversion != null" >
-        standardversion = #{standardversion,jdbcType=VARCHAR},
+      <if test="versionn != null" >
+        versionn = #{versionn,jdbcType=VARCHAR},
       </if>
-      <if test="standardkeys != null" >
-        standardkeys = #{standardkeys,jdbcType=VARCHAR},
+      <if test="keyss != null" >
+        keyss = #{keyss,jdbcType=VARCHAR},
       </if>
       <if test="releaseDate != null" >
         release_date = #{releaseDate,jdbcType=DATE},
@@ -244,12 +244,12 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.kgc.pojo.Standard" >
+  <update id="updateByPrimaryKey" parameterType="com.kgc.springssm.pojo.Standard" >
     update standard
     set std_num = #{stdNum,jdbcType=VARCHAR},
       zhname = #{zhname,jdbcType=VARCHAR},
-      standardversion = #{standardversion,jdbcType=VARCHAR},
-      standardkeys = #{standardkeys,jdbcType=VARCHAR},
+      versionn = #{versionn,jdbcType=VARCHAR},
+      keyss = #{keyss,jdbcType=VARCHAR},
       release_date = #{releaseDate,jdbcType=DATE},
       impl_date = #{implDate,jdbcType=DATE},
       package_path = #{packagePath,jdbcType=VARCHAR}
